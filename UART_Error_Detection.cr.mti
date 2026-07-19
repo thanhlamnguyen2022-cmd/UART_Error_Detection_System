@@ -1,0 +1,36 @@
+D:/ModelSim/UART_Error_Detection/Top_Module.v {1 {vlog -work work -stats=none {D:\ModelSim\UART_Error_Detection\Top_Module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module uart_system_top
+
+Top level modules:
+	uart_system_top
+
+} {} {}} D:/ModelSim/UART_Error_Detection/Module_TestBench.v {1 {vlog -work work -stats=none {D:\ModelSim\UART_Error_Detection\Module_TestBench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_uart_system
+
+Top level modules:
+	tb_uart_system
+
+} {} {}} D:/ModelSim/UART_Error_Detection/Error_Detection_Decoder.v {1 {vlog -work work -stats=none {D:\ModelSim\UART_Error_Detection\Error_Detection_Decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module error_decoder
+
+Top level modules:
+	error_decoder
+
+} {} {}} D:/ModelSim/UART_Error_Detection/Baud_Rate_Generator.v {1 {vlog -work work -stats=none {D:\ModelSim\UART_Error_Detection\Baud_Rate_Generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module baud_gen
+
+Top level modules:
+	baud_gen
+
+} {} {}} D:/ModelSim/UART_Error_Detection/Error_Detection_Encoder.v {1 {vlog -work work -stats=none {D:\ModelSim\UART_Error_Detection\Error_Detection_Encoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module error_encoder
+
+Top level modules:
+	error_encoder
+
+} {} {}}

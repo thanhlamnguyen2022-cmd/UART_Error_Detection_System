@@ -1,0 +1,141 @@
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Module_TestBench.v was successful.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_uart_system
+# vsim work.tb_uart_system 
+# Start time: 20:29:06 on Jul 19,2026
+# ** Error: (vsim-3170) Could not find 'tb_uart_system'.
+#         Searched libraries:
+#             D:/ModelSim/UART_Error_Detection/work
+# Error loading design
+# End time: 20:29:07 on Jul 19,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9
+# Load canceled
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_uart_system
+# vsim work.tb_uart_system 
+# Start time: 20:36:15 on Jul 19,2026
+# Loading work.tb_uart_system
+# Loading work.uart_system_top
+# Loading work.baud_gen
+# Loading work.error_encoder
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading work.error_decoder
+add wave -position insertpoint  \
+sim:/tb_uart_system/inject_error \
+sim:/tb_uart_system/data_in \
+sim:/tb_uart_system/data_out \
+sim:/tb_uart_system/error_flag \
+sim:/tb_uart_system/tx_done \
+sim:/tb_uart_system/rx_done
+add wave -position insertpoint  \
+sim:/tb_uart_system/inject_error \
+sim:/tb_uart_system/data_in \
+sim:/tb_uart_system/data_out \
+sim:/tb_uart_system/error_flag \
+sim:/tb_uart_system/tx_done \
+sim:/tb_uart_system/rx_done
+view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/tb_uart_system/inject_error \
+sim:/tb_uart_system/data_in \
+sim:/tb_uart_system/data_out \
+sim:/tb_uart_system/error_flag \
+sim:/tb_uart_system/tx_done \
+sim:/tb_uart_system/rx_done
+run -all
+# ** Note: $stop    : D:/ModelSim/UART_Error_Detection/Module_TestBench.v(33)
+#    Time: 2299510 ns  Iteration: 0  Instance: /tb_uart_system
+# Break in Module tb_uart_system at D:/ModelSim/UART_Error_Detection/Module_TestBench.v line 33
+# Compile of Baud_Rate_Generator.v was successful.
+# Compile of UART_Transmitter_Tx.v was successful.
+# Compile of UART_Receiver_Rx.v was successful.
+# Compile of Error_Detection_Encoder.v was successful.
+# Compile of Error_Detection_Decoder.v was successful.
+# Compile of Top_Module.v was successful.
+# Compile of Module_TestBench.v was successful.
+# 7 compiles, 0 failed with no errors.
+view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/tb_uart_system/clk \
+sim:/tb_uart_system/rst \
+sim:/tb_uart_system/tx_start \
+sim:/tb_uart_system/inject_error \
+sim:/tb_uart_system/data_in \
+sim:/tb_uart_system/data_out \
+sim:/tb_uart_system/error_flag \
+sim:/tb_uart_system/tx_done \
+sim:/tb_uart_system/rx_done
+run -all

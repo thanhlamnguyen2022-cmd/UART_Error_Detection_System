@@ -1,0 +1,51 @@
+module uart_tx(
+    input clk, rst, tick, start, 
+    input [8:0] din, 
+    output reg tx, done
+);
+    localparam IDLE=0, START=1, DATA=2, STOP=3;
+    reg [1:0] state; 
+    reg [3:0] s, n; 
+    reg [8:0] b;    
+    
+    always @(posedge clk) begin
+        if (rst) begin 
+            state <= IDLE; tx <= 1; done <= 0; s <= 0; n <= 0; 
+        end
+        else begin
+            done <= 0;
+            case (state)
+                IDLE: begin 
+                    tx <= 1; 
+                    if(start) begin state <= START; s <= 0; b <= din; end 
+                end
+                START: if(tick) begin
+                    if(s == 15) begin 
+                        state <= DATA; s <= 0; n <= 0; 
+                        tx <= b[0]; b <= {1'b0, b[8:1]}; 
+                    end
+                    else s <= s + 1;
+                    tx <= 0; 
+                end
+                DATA: if(tick) begin
+                    if(s == 15) begin
+                        s <= 0;
+                        if(n == 8) state <= STOP; 
+                        else begin 
+                            n <= n + 1; 
+                            tx <= b[0]; b <= {1'b0, b[8:1]}; 
+                        end
+                    end 
+                    else s <= s + 1;
+                end
+                STOP: begin 
+                    tx <= 1; 
+                    if(tick) begin
+                        if(s == 15) begin state <= IDLE; done <= 1; end
+                        else s <= s + 1;
+                    end 
+                end
+            endcase
+        end
+    end
+endmodule
