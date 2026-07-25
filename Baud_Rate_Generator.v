@@ -13,7 +13,7 @@ module baud_gen(
             tick <= 1; 
         end 
         else begin 
-            counter <= counter + 1; 
+            counter <= counter + 1'b1; 
             tick <= 0; 
         end
     end
