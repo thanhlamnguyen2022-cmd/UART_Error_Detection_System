@@ -21,20 +21,20 @@ module uart_rx(
                         if(~rx) begin s <= 0; n <= 0; state <= DATA; end 
                         else state <= IDLE; 
                     end 
-                    else s <= s + 1;
+                    else s <= s + 1'b1;
                 end
                 DATA: if(tick) begin
                     if(s == 15) begin
                         s <= 0; 
                         b <= {rx, b[8:1]}; 
                         if(n == 8) state <= STOP; 
-                        else n <= n + 1;
+                        else n <= n + 1'b1;
                     end 
-                    else s <= s + 1;
+                    else s <= s + 1'b1;
                 end
                 STOP: if(tick) begin
                     if(s == 15) begin state <= IDLE; done <= 1; dout <= b; end
-                    else s <= s + 1;
+                    else s <= s + 1'b1;
                 end
             endcase
         end
