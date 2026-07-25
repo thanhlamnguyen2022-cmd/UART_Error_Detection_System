@@ -24,7 +24,7 @@ module uart_tx(
                         state <= DATA; s <= 0; n <= 0; 
                         tx <= b[0]; b <= {1'b0, b[8:1]}; 
                     end
-                    else s <= s + 1;
+                    else s <= s + 1'b1;
                     tx <= 0; 
                 end
                 DATA: if(tick) begin
@@ -32,17 +32,17 @@ module uart_tx(
                         s <= 0;
                         if(n == 8) state <= STOP; 
                         else begin 
-                            n <= n + 1; 
+                            n <= n + 1'b1; 
                             tx <= b[0]; b <= {1'b0, b[8:1]}; 
                         end
                     end 
-                    else s <= s + 1;
+                    else s <= s + 1'b1;
                 end
                 STOP: begin 
                     tx <= 1; 
                     if(tick) begin
                         if(s == 15) begin state <= IDLE; done <= 1; end
-                        else s <= s + 1;
+                        else s <= s + 1'b1;
                     end 
                 end
             endcase
